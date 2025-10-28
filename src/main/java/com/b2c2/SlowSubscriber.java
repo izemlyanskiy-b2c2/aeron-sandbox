@@ -12,8 +12,7 @@ public class SlowSubscriber {
 
     public static final String CHANNEL = new ChannelUriStringBuilder(CommonContext.IPC_CHANNEL)
             .tether(false)
-            .untetheredLingerTimeout("0")
-            .untetheredRestingTimeout("0")
+            .alias("slow")
             .build();
 
     public static void main(String[] args) {

@@ -17,6 +17,7 @@ public class Publisher {
     public static final long PUBLISHER_TIMEOUT = TimeUnit.MILLISECONDS.toNanos(200);
     public static final String CHANNEL = new ChannelUriStringBuilder(CommonContext.IPC_CHANNEL)
             .flowControl("max")
+            .alias("mystream")
             .untetheredWindowLimitTimeout("0")
             .build();
 
