@@ -10,8 +10,6 @@ import org.agrona.concurrent.UnsafeBuffer;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.LockSupport;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Publisher {
     public static final String DATA;
     public static final long PUBLISHER_TIMEOUT = TimeUnit.MILLISECONDS.toNanos(200);
